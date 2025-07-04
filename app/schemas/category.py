@@ -1,7 +1,9 @@
-from app.schemas.product import ProductShort
-from pydantic import BaseModel, Field, ConfigDict, field_validator
-from typing_extensions import Annotated
 from typing import Literal
+
+from pydantic import BaseModel, ConfigDict, Field, field_validator
+from typing_extensions import Annotated
+
+from app.schemas.product import ProductShort
 
 
 class CategoryShort(BaseModel):

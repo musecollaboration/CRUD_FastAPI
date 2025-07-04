@@ -1,0 +1,2 @@
+isort
+setuptools  # ← только если Python 3.12+ и нужно для pkg_resources

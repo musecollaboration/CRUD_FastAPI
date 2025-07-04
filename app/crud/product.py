@@ -1,11 +1,11 @@
 from fastapi import HTTPException
-from app.models import Product
-from sqlalchemy.orm import Session
-from sqlalchemy import select
 from slugify import slugify
+from sqlalchemy import select
+from sqlalchemy.orm import Session, joinedload
+
+from app.models import Product
 from app.models.product import Product as ProductModel
-from app.schemas.product import ProductUpdate, ProductRead, ProductCreate
-from sqlalchemy.orm import joinedload
+from app.schemas.product import ProductCreate, ProductRead, ProductUpdate
 
 
 def get_all_products(db: Session) -> list[ProductRead]:

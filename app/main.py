@@ -1,6 +1,8 @@
 from fastapi import FastAPI, status
+
 from app.api.category import router as category_router
 from app.api.product import router as product_router
+
 
 app = FastAPI()
 

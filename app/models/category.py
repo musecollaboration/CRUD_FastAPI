@@ -1,5 +1,5 @@
-from sqlalchemy import String, Boolean, ForeignKey
-from sqlalchemy.orm import Mapped, relationship, mapped_column
+from sqlalchemy import Boolean, ForeignKey, String
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.backend.db import Base
 

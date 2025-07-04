@@ -1,11 +1,12 @@
-from fastapi import APIRouter, HTTPException, Depends, status
+from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import JSONResponse
-from typing_extensions import Annotated
 from sqlalchemy.orm import Session
+from typing_extensions import Annotated
 
 from app.backend.dependencies import get_db
-from app.schemas.product import ProductCreate, ProductUpdate, ProductRead
 from app.crud import product as crud
+from app.schemas.product import ProductCreate, ProductRead, ProductUpdate
+
 
 router = APIRouter(prefix="/products", tags=["Products"])
 

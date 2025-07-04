@@ -1,10 +1,11 @@
-from sqlalchemy.orm import Session, joinedload
-from sqlalchemy import select
-from slugify import slugify
 from fastapi import HTTPException, status
+from slugify import slugify
+from sqlalchemy import select
+from sqlalchemy.orm import Session, joinedload
 
 from app.models.category import Category as CategoryModel
-from app.schemas.category import CategoryRead, CategoryShort, CategoryCreate, CategoryUpdate, CategoryTreeWithProducts, FlatNode
+from app.schemas.category import (CategoryCreate, CategoryRead, CategoryShort, CategoryTreeWithProducts, CategoryUpdate,
+                                  FlatNode)
 from app.schemas.product import ProductShort
 
 

@@ -4,8 +4,9 @@ from sqlalchemy.orm import Session
 from typing_extensions import Annotated
 
 from app.backend.dependencies import get_db
-from app.schemas.category import CategoryRead, CategoryCreate, CategoryUpdate, CategoryTreeWithProducts, FlatNode
 from app.crud import category as crud
+from app.schemas.category import CategoryCreate, CategoryRead, CategoryTreeWithProducts, CategoryUpdate, FlatNode
+
 
 router = APIRouter(
     prefix="/categories",

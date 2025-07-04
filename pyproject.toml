@@ -1,0 +1,8 @@
+[tool.isort]
+profile = "pycharm"                # Стиль форматирования
+multi_line_output = 0              # Импорты в одну строку
+use_parentheses = false            # Без круглых скобок
+include_trailing_comma = false     # Без запятых в конце строки
+force_grid_wrap = 0                # Не разбивать строки дополнительно
+line_length = 120                  # Максимальная длина строки
+
