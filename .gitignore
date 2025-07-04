@@ -1,0 +1,68 @@
+# 📦 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# 🐍 venv
+.venv/
+venv/
+env/
+ENV/
+pip-log.txt
+
+# 🔧 VS Code / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🗃️ PyCharm / JetBrains
+*.iml
+*.ipr
+*.iws
+*.db
+
+# 🔒 Environment
+.env
+.env.*
+
+# 🔄 Migrations / Alembic
+migrations/
+alembic/
+
+# 🚀 Uvicorn reload file
+*.pid
+
+# 🧪 Test artifacts
+htmlcov/
+.coverage
+coverage.xml
+pytest_cache/
+.cache/
+.tox/
+
+# 📝 MyPy / Lint
+.mypy_cache/
+.dmypy.json
+.pylintrc
+.pytype/
+
+# 🧪 Pytest snapshots (если используешь snapshottest)
+.snapshots/
+
+# 📄 Local configs
+*.local
+*.sqlite3
+*.db
+*.bak
+
+# 🔍 MacOS & system
+.DS_Store
+Thumbs.db
